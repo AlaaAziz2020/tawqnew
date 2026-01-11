@@ -224,7 +224,7 @@ const router = createHashRouter([
 {path:'abouttawq' ,element:<Abouttawq/>},
 {path:'offers',element:<Offers/>},
   {path:"offerstawq",element:<OffersTawq/>},
-{path:"offerstawqnajah",element:<Offerstawqnajah/>},
+// {path:"offerstawqnajah",element:<Offerstawqnajah/>},
 {path:"successpartners",element:<SuccessPartners/>},
 {path:'sellers',element:<Sellers/>},
 { path:'sellersdetails/:id', element:<SellersDetails/> },

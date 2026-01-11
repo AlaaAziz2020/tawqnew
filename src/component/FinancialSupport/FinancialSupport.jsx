@@ -1,4 +1,6 @@
 import React from "react";
+import { useState } from "react";
+
 import { Form, Row, Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "../FinancialSupport/FinancialSupport.css";
@@ -6,6 +8,14 @@ import eyedark from '../../assets/eyedark.png';
 import whitesupport from '../../assets/whitesupport.png';
 
 export default function FinancialSupport() {
+  //   const [openOrg, setOpenOrg] = useState(true);
+  // const [selectedOrg, setSelectedOrg] = useState("اختر الجهة المدعومة");
+
+  // const handleSelectOrg = (value) => {
+  //   setSelectedOrg(value);
+  //   setOpenOrg();
+  // };
+
   return (
     <div className="support-wrapper">
       <div className="container">
@@ -24,63 +34,59 @@ export default function FinancialSupport() {
               {/* الدعم المادي */}
               <Link to="/financialsupport" className="text-decoration-none support-tab active-tab">
                 <img src={whitesupport} />
-                <span className="f-text mx-3 text-white">الدعم المادي</span>
+                <span className="f-text mx-3 text-white">
+                  الباقات
+                  </span>
               </Link>
 
             </div>
           </div>
 
           {/* ===== LEFT SIDE FORM ===== */}
-          <div className="col-lg-9 col-12 ayni-wrapper">
+             <div className="col-lg-9 col-12">
 
-            <Form.Group className="mb-4">
-              <Form.Label className="label-title">الاسم</Form.Label>
-              <Form.Control className="input-box" placeholder="الاسم" />
-            </Form.Group>
+            <div className="mb-4">
+              <label className="label-title pt-3 ">الجهة المدعومة</label>
+              {/* <span className="selectdown"><i className="fa fa-chevron-down"></i></span> */}
+              <select className="form-control input-box custom-select">
+                <option value="">اختر الجهة المدعومة</option>
+                <option value="charity1">جمعية الخير</option>
+                <option value="charity2">جمعية البر</option>
+                <option value="charity3">مؤسسة الرحمة</option>
+            </select>
+            </div>
+{/* <div className="custom-select" onClick={() => setOpenOrg(!openOrg)}>
+  <span>{selectedOrg}</span>
+  <span className="arrow"><i className="fa fa-chevron-down" ></i></span>
+</div> */}
 
-            <Row className="mb-4">
-              <Col md={6}>
-                <Form.Label className="label-title">الدولة</Form.Label>
-                <Form.Control className="input-box" placeholder="الدولة" />
-              </Col>
+            <div className="mb-4">
+              <label className="label-title">
+                المال
+              </label>
+                              {/* <span className="selectdown2"><i className="fa fa-chevron-down"></i></span> */}
+            <select className="form-control input-box custom-select">
+                 
+                 <option value="">اختر المبلغ</option>
+                 <option value="100">100 ريال</option>
+                 <option value="250">250 ريال</option>
+                 <option value="500">500 ريال</option>
+                <option value="1000">1000 ريال</option>
+              </select>
+            </div>
+{/* 
+            <div className="mb-4">
+              <label className="label-title">وصف المنتج</label>
+              <textarea
+                rows="4"
+                className="form-control input-box"
+                placeholder=":تجربة أول ريكوست للدعم العيني "
+              />
+            </div> */}
 
-              <Col md={6}>
-                <Form.Label className="label-title">المدينة/المحافظة</Form.Label>
-                <Form.Control className="input-box" placeholder="المدينة/المحافظة" />
-              </Col>
-            </Row>
-
-            <Form.Label className="label-title">رقم الهاتف</Form.Label>
-            <Row className="mb-4 keyphone">
-              <Col xs={4}>
-                <Form.Select className="input-box small-box">
-                  <option>+966</option>
-                  <option>+20</option>
-                  <option>+971</option>
-                </Form.Select>
-              </Col>
-
-              <Col xs={8}>
-                <Form.Control className="input-box" placeholder="123 456 789" />
-              </Col>
-            </Row>
-
-            <Form.Group className="mb-4">
-              <Form.Label className="label-title">العنوان</Form.Label>
-              <Form.Control className="input-box" placeholder="العنوان" />
-            </Form.Group>
-
-            <Form.Group className="mb-4">
-              <Form.Label className="label-title">الجهة المدعومة</Form.Label>
-              <Form.Control className="input-box" placeholder="ادخل اسم الجهه المدعومة" />
-            </Form.Group>
-
-            <Form.Group className="mb-4">
-              <Form.Label className="label-title">مبلغ التبرع</Form.Label>
-              <Form.Control className="input-box" placeholder="ادخل مبلغ التبرع" />
-            </Form.Group>
-
-            <Button className="submit-btn w-100">إرسال الطلب</Button>
+            <button className="submit-btn w-100 ">
+              إرسال الطلب
+            </button>
 
           </div>
 

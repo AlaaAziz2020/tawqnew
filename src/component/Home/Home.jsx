@@ -125,8 +125,10 @@ export default function Home() {
       <Categories />
 
        {/* <ProductsSection />  */}
-       <Offerstawqnajah /> 
-      <Offers/>
+         <Offerstawqnajah /> 
+       <Offers/>  
+             {/* <OffersTawq/>  */}
+
       <SuccessPartners />
     </div>
   );

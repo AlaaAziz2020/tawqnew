@@ -59,7 +59,7 @@ export default function Offers() {
 function ProductCard({ p, navigate }) {
   return (
     <Link
-      to="/offerstawqnajah"
+      to="/offerstawq"
       state={{ product: p }}
       className="offerscustomer-product-card d-block h-100 d-flex flex-column mt-2"
       style={{ textDecoration: "none", color: "inherit" }}

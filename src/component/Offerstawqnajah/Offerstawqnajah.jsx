@@ -131,11 +131,17 @@ export default function Offerstawqnajah() {
         {sections.map((sec, index) => (
           <section key={index} className="">
 
-            <div className="offerscustomer-products-header3 " >
+<div
+  className="offerscustomer-products-header3"
+  style={{ cursor: "pointer" }}
+  onClick={() => navigate("/offerstawq", { replace: false })}
+>
+  <h2 className="offerscustomer-products-title">
+    {sec.title}
+  </h2>
+</div>
               
-              <h2 className="offerscustomer-products-title ">{sec.title}</h2>
-              {/* <span className="customer-view-more">رؤية المزيد</span> */}
-            </div>
+        
 
             {/* الكروت Bootstrap Responsive: change to col-md-3 for 4 columns at md and up */}
             <div className="row g-4 mb-5">

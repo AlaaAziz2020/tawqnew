@@ -69,6 +69,43 @@
       direction: ltr;
 
 }
+.custom-select {
+  position: relative;
+  background: #FAFAFA;
+  border: 1px solid #E9E9E9;
+  border-radius: 12px;
+  padding: 14px 16px;
+  padding-left: 40px;   /* مساحة للسهم */
+  cursor: pointer;
+}
+
+/* السهم */
+.custom-select::after {
+  content: "⌄";
+  position: absolute;
+  left: 16px;           /* أقصى الشمال */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #555;
+  pointer-events: none; /* مهم */
+}
+.selectdown{
+  position: absolute;
+      left: 14%;
+    top: 37%;
+}
+.selectdown2{
+  position: absolute;
+    left: 13%;
+    top: -100%;
+}
+/* .custom-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+} */
+
 @media screen and (max-width:480px){
     .tabs2 {
         padding-top: 3%;

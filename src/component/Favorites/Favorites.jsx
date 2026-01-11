@@ -44,8 +44,8 @@ export default function Favorites() {
                           </div>
                           <div className="card-desc d-md-none">
                             <p className="mb-0 text-muted">
-                              تيشيرت شتوي أنيق، مصنوع من خامة دافئة ومريحة،
-                              مناسب للاستخدام اليومي وفي الأجواء الباردة. 
+                              تيشيرت شتوي أنيق،..
+                              
                           
                             </p>
                           </div>

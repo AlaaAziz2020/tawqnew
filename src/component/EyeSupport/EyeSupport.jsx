@@ -20,7 +20,7 @@ export default function EyeSupport() {
               >
                 <img src={eyedark} alt="" />
                 <span className="eye-text">
-                  الباقات
+                الدعم العيني
                   </span>
               </Link>
 
@@ -29,7 +29,9 @@ export default function EyeSupport() {
                 className="support-tab inactive-tab text-decoration-none"
               >
                 <img src={fsupport} alt="" />
-                <span className="f-text">الدعم المادي</span>
+                <span className="f-text">
+                       الباقات 
+                </span>
               </Link>
 
             </div>
@@ -38,56 +40,30 @@ export default function EyeSupport() {
           {/* ===== FORM ===== */}
           <div className="col-lg-9 col-12">
 
-            <div className="mb-4">
-              <label className="label-title pt-3">الاسم</label>
-              <input className="form-control input-box" placeholder="الاسم" />
-            </div>
+        
+                     <div className="mb-4">
+              <label className="label-title pt-3">
+                              الجهة المدعومة
 
-            <div className="row mb-4">
-              <div className="col-md-6">
-                <label className="label-title">الدولة</label>
-                <input className="form-control input-box" placeholder="الدولة" />
-              </div>
-
-              <div className="col-md-6">
-                <label className="label-title">المدينة / المحافظة</label>
-                <input
-                  className="form-control input-box"
-                  placeholder="المدينة / المحافظة"
-                />
-              </div>
-            </div>
-
-            <div className="row mb-4">
-              <div className="col-md-4">
-                <label className="label-title">كود الدولة</label>
-                <select className="form-control input-box">
-                  <option>+966</option>
-                  <option>+20</option>
-                  <option>+971</option>
-                </select>
-              </div>
-
-              <div className="col-md-8">
-                <label className="label-title">رقم الهاتف</label>
-                <input
-                  className="form-control input-box"
-                  placeholder="123 456 789"
-                />
-              </div>
+              </label>
+                              {/* <span className="selectdown2"><i className="fa fa-chevron-down"></i></span> */}
+            <select className="form-control input-box custom-select">
+                 
+                 <option value="">الجهة المدعومة</option>
+                 <option value="100">
+                  جمعيةالخير 
+                 </option>
+        
+              </select>
             </div>
 
             <div className="mb-4">
-              <label className="label-title">العنوان</label>
-              <input className="form-control input-box" placeholder="العنوان" />
-            </div>
-
-            <div className="mb-4">
-              <label className="label-title">نوع الدعم العيني</label>
-              <input
-                className="form-control input-box"
-                placeholder="مثال: طعام، ملابس"
-              />
+              <label className="label-title">
+                نوع الدعم العيني
+              </label>
+                          <select className="form-control input-box custom-select">
+                 <option value="">نوع الدعم العيني</option>
+                 </select>
             </div>
 
             <div className="mb-4">
@@ -95,7 +71,7 @@ export default function EyeSupport() {
               <textarea
                 rows="4"
                 className="form-control input-box"
-                placeholder="مثال: شنطة جديدة تكفي جميع الأغراض"
+                placeholder=":تجربة أول ريكوست للدعم العيني "
               />
             </div>
 

@@ -83,7 +83,7 @@ export default function SellerShippedOrders() {
                     <div className="order-bottom-row">
                       <span className="order-badge">x{order.qty}</span>
                       <span className="corder-type">ملابس</span>
-                      <span className="confirmorder-price">
+                      <span className="confirmorder-price2">
                         {order.price} 
                       </span>
                     </div>

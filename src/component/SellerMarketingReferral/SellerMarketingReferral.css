@@ -13,7 +13,7 @@
   gap: 18px;
 }
 
-.side-btn {
+.side-btn2 {
   background: #ffffff;
   border: 1px solid #dddddd;
   padding: 18px 16px;
@@ -24,20 +24,21 @@
   cursor: pointer;
 }
 
-.side-btn.active {
+.side-btn2.active {
   background: #123a8a;
   color: #fff;
   border-color: #123a8a;
 }
 
-.side-btn.logout {
+.side-btn2.logout {
   background: #d22121;
   color: #fff;
   border-color: #d22121;
 }
 
 /* Content */
-.marketing-content {
+.marketing-contentt2 {
+  padding-top:30px;
   flex: 1;
   margin-right: 60px;
   text-align: center;
@@ -48,16 +49,16 @@
   margin-bottom: 20px;
 }
 
-.marketing-title {
-  font-size: 30px;
+.marketing-title2 {
+    font-size: 22px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .marketing-subtitle {
-  color: #8b8b8b;
-  font-size: 18px;
-  margin-bottom: 30px;
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 15px;
 }
 
 /* Info Boxes */
@@ -79,7 +80,7 @@
 }
 
 .info-text {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -96,6 +97,29 @@ width: 100%;
     border: none;
     padding: 14px 0;
     border-radius: 12px;
-    font-size: 20px;
+    font-size: 17px;
     margin-top: 11px;
+}
+@media (max-width:768px) {
+  .info-text{
+        font-size: 12px;
+  }
+  .side-btn2{
+        font-size: 17px;
+
+  }
+  .marketing-contentt2{
+        padding-top: 0 !important;
+        margin: 0 auto !important;
+        text-align: center;
+
+
+  }
+  .marketing-title2 {
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
 }

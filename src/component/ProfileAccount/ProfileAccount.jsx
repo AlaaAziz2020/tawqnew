@@ -41,7 +41,7 @@ import { Link } from "react-router-dom";
   <span className="px-2">التسويق</span>
 </Link>
 
-            <Link to="/advertisementdetails" className="side-btn white">
+            <Link to="/myaddvertisements" className="side-btn white">
               <img src={myadvertisements} alt="" />
               <span className="px-2">إعلاناتي</span>
             </Link>
@@ -51,7 +51,7 @@ import { Link } from "react-router-dom";
               <span className="px-2">إضافة إعلان</span>
             </Link>
 
-      <Link to="/logoutconfirm" className="side-btn logout">
+      <Link to="/accounttype" className="side-btn logout">
   <img src={logoutimg} alt="" />
   <span className="px-2">تسجيل الخروج</span>
 </Link>

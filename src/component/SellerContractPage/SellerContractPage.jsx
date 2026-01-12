@@ -9,7 +9,7 @@ export default function SellerContractPage() {
   const [activeTab, setActiveTab] = useState("contract");
 
   return (
-    <div className="contract-page container  ">
+    <div className="contract-page container pt-4 mt-5 ">
 
       {/* ==== Tabs Header ==== */}
       <div className="tabs-header mt-5 mb-5 pt-5 pb-5">

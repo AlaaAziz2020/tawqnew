@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import "../Offers/Offers.css"; // make sure this file contains the responsive CSS
+import "../OffersTawq/OffersTawq.css"; // make sure this file contains the responsive CSS
 
 // الملابس
 import item1 from "../../assets/wool.jpg";
@@ -124,7 +124,7 @@ export default function Offers() {
   return (
     <div className="offers-wrapper2 mb-5 pb-5 " style={{marginTop: "180px"}} >
       <div className=" container ">
-      <h1 className="first-heading  ">عروض طوق نجاة</h1>
+      <h1 className="first-heading  "> الإقتراحات </h1>
         <div className="row">
           {/* <h1 className="offers-heading">عروض طوق نجاة</h1> */}
 
@@ -160,7 +160,7 @@ export default function Offers() {
 function ProductCard({ p, navigate }) {
   return (
     <Link
-      to="/offerssugg"
+      to="/offerstawq"
       state={{ product: p }}
       className="offerscustomer-product-card d-block h-100 d-flex flex-column "
       style={{ textDecoration: "none", color: "inherit" }}

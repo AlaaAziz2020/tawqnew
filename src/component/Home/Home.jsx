@@ -126,8 +126,8 @@ export default function Home() {
 
        {/* <ProductsSection />  */}
          <Offerstawqnajah /> 
-       <Offers/>  
-             {/* <OffersTawq/>  */}
+       {/* <Offers/>   */}
+             <OffersTawq/> 
 
       <SuccessPartners />
     </div>

@@ -90,6 +90,9 @@
   .logoutmarketing-sidebar .side-btn {
         font-size: 14px;
     }
+    .logout-text{
+  font-size: 14px;
+}
 }
 @media (max-width: 1024px) {
   .profile-wrapper{

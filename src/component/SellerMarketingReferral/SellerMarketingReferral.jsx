@@ -7,43 +7,56 @@ import accountimg from "../../assets/account-img.png";
 import marketingimg from "../../assets/m-img.png";
 import survimg from "../../assets/surv-img.png";
 import logoutimg from "../../assets/logout-img.png";
+import { Link } from 'react-router-dom';
+
 export default function SellerMarketingReferral() {
   return (
-    <div className="marketing-wrapper container">
+    <div className="marketing-wrapper container mt-5 pt-5">
 
       {/* Sidebar */}
-   <div className="marketing-sidebar mt-5">
+   <div className="marketing-sidebar mt-5 pt-5 ">
 
-        <button className="side-btn">
+        {/* <button className="side-btn">
          <img src={profilepicture} /> حسابي الشخصي 
-        </button>
+        </button> */}
+  <button className="side-btn2 ">
 
-        <button className="side-btn">
-         <img src={accountimg}/> الحساب البنكي 
-        </button>
+      <Link to="/seller/sellerbankaccount" className="text-dark text-decoration-none">
+        <img className='ps-3' src={accountimg} alt="Bank Account" />
+        الحساب البنكي
+      </Link>
+      </button>
+  <button className="side-btn2 active">
+    <Link to="/seller/sellermarketingreferral" className="text-white text-decoration-none">
+      <img className='ps-3' src={marketingimg} alt="Marketing" />
+      التسويق
+    </Link>
+  </button>
 
-        <button className="side-btn active">
-        <img src={marketingimg}/>  التسويق 
-        </button>
+  <button className="side-btn2">
+    <Link to="/seller/sellercontractpage" className="text-dark text-decoration-none">
+      <img className='ps-3' src={survimg} alt="Contracts" />
+      التقييم والعقود
+    </Link>
+  </button>
 
-        <button className="side-btn">
-        <img src={survimg}/>  التقييم والعقود 
-        </button>
-
-        <button className="side-btn logout">
-         <img src={logoutimg}/> تسجيل الخروج 
-        </button>
+    <button className="side-btn2 logout">
+    <Link to="/accounttype" className="text-white text-decoration-none">
+      <img className='ps-3' src={logoutimg} alt="Logout" />
+      تسجيل الخروج
+    </Link>
+  </button>
 
       </div>
 
       {/* Content */}
-      <div className="marketing-contentt">
+      <div className="marketing-contentt2 mt-5 ">
 
         <div className="marketing-illustration">
           <img src={giftImg} alt="marketing" />
         </div>
 
-        <h2 className="marketing-title">شارك كود الإحالة الخاص بك مع اصدقائك!</h2>
+        <h2 className="marketing-title2">شارك كود الإحالة الخاص بك مع اصدقائك!</h2>
 
         <p className="marketing-subtitle">
           كل شخص يستخدم كودك لتسجيل الدخول تحصل على مكافآت مالية

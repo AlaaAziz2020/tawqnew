@@ -47,7 +47,7 @@ import star from "../../assets/Star 3.png";
 import carticon from "../../assets/whitecarts.png";
 const sections = [
   {
-    // title: "الملابس",
+     title: "الملابس",
     products: [
       { id: 1, img: item1, name: "بلوزة صوف", desc: "ناعمة، دافئة، أنيقة…", oldPrice: 450, price: 250, rate: 4.9, discount: 20 },
       { id: 2, img: item2, name: "تيشيرت شتوي", desc: "خامة ثقيلة، مريحة…", oldPrice: 400, price: 240, rate: 4.8, discount: 20 },
@@ -65,74 +65,74 @@ const sections = [
     ],
   },
 
-  // {
-  //   title: "الإلكترونيات",
-  //   products: [
-  //     { id: 5, img: airpods, name: "سماعات بلوتوث", desc: "صوت نقي، واضح…", oldPrice: 300, price: 220, rate: 4.9, discount: 25 },
-  //     { id: 6, img: watch, name: "ساعة ذكية", desc: "متابعة صحية، ذكية…", oldPrice: 500, price: 380, rate: 4.8, discount: 20 },
-  //     { id: 7, img: keyboard, name: "كيبورد RGB", desc: "إضاءة قوية، احترافية…", oldPrice: 250, price: 180, rate: 4.7, discount: 20 },
-  //     { id: 8, img: laptop, name: "لابتوب عملي", desc: "أداء قوي، سريع…", oldPrice: 3500, price: 2999, rate: 4.9, discount: 15 },
-  //   ],
-  // },
+   {
+    title: "الإلكترونيات",
+    products: [
+     { id: 5, img: airpods, name: "سماعات بلوتوث", desc: "صوت نقي، واضح…", oldPrice: 300, price: 220, rate: 4.9, discount: 25 },
+      { id: 6, img: watch, name: "ساعة ذكية", desc: "متابعة صحية، ذكية…", oldPrice: 500, price: 380, rate: 4.8, discount: 20 },
+      { id: 7, img: keyboard, name: "كيبورد RGB", desc: "إضاءة قوية، احترافية…", oldPrice: 250, price: 180, rate: 4.7, discount: 20 },
+       { id: 8, img: laptop, name: "لابتوب عملي", desc: "أداء قوي، سريع…", oldPrice: 3500, price: 2999, rate: 4.9, discount: 15 },
+     ],
+   },
 
-  // {
-  //   title: "الأثاث",
-  //   products: [
-  //     { id: 9, img: furn1, name: "كرسي مريح", desc: "راحة، تصميم عصري…", oldPrice: 400, price: 299, rate: 4.8, discount: 25 },
-  //     { id: 10, img: furn2, name: "طاولة قهوة", desc: "خشب طبيعي، أنيق…", oldPrice: 500, price: 350, rate: 4.9, discount: 30 },
-  //     { id: 11, img: furn3, name: "كنبة فاخرة", desc: "مريحة، ثلاثية المقاعد…", oldPrice: 1500, price: 1199, rate: 5.0, discount: 20 },
-  //     { id: 12, img: furn4, name: "وحدة تخزين", desc: "مودرن، عملية، متينة…", oldPrice: 800, price: 599, rate: 4.7, discount: 20 },
-  //   ],
-  // },
+   {
+     title: "الأثاث",
+     products: [
+       { id: 9, img: furn1, name: "كرسي مريح", desc: "راحة، تصميم عصري…", oldPrice: 400, price: 299, rate: 4.8, discount: 25 },
+       { id: 10, img: furn2, name: "طاولة قهوة", desc: "خشب طبيعي، أنيق…", oldPrice: 500, price: 350, rate: 4.9, discount: 30 },
+       { id: 11, img: furn3, name: "كنبة فاخرة", desc: "مريحة، ثلاثية المقاعد…", oldPrice: 1500, price: 1199, rate: 5.0, discount: 20 },
+       { id: 12, img: furn4, name: "وحدة تخزين", desc: "مودرن، عملية، متينة…", oldPrice: 800, price: 599, rate: 4.7, discount: 20 },
+     ],
+   },
 
-  // {
-  //   title: "المطبخ",
-  //   products: [
-  //     { id: 13, img: kitchen1, name: "خلاط كهربائي", desc: "قوة عالية، فعّال…", oldPrice: 300, price: 199, rate: 4.9, discount: 20 },
-  //     { id: 14, img: kitchen2, name: "مقلاة جرانيت", desc: "غير لاصقة، متينة…", oldPrice: 200, price: 150, rate: 4.8, discount: 25 },
-  //     { id: 15, img: kitchen3, name: "غلاية كهربائية", desc: "سعة كبيرة، سريعة…", oldPrice: 180, price: 130, rate: 4.7, discount: 20 },
-  //     { id: 16, img: kitchen4, name: "طقم أواني", desc: "خامة ممتازة، عملية…", oldPrice: 500, price: 380, rate: 4.8, discount: 20 },
-  //   ],
-  // },
+   {
+     title: "المطبخ",
+     products: [
+       { id: 13, img: kitchen1, name: "خلاط كهربائي", desc: "قوة عالية، فعّال…", oldPrice: 300, price: 199, rate: 4.9, discount: 20 },
+       { id: 14, img: kitchen2, name: "مقلاة جرانيت", desc: "غير لاصقة، متينة…", oldPrice: 200, price: 150, rate: 4.8, discount: 25 },
+       { id: 15, img: kitchen3, name: "غلاية كهربائية", desc: "سعة كبيرة، سريعة…", oldPrice: 180, price: 130, rate: 4.7, discount: 20 },
+       { id: 16, img: kitchen4, name: "طقم أواني", desc: "خامة ممتازة، عملية…", oldPrice: 500, price: 380, rate: 4.8, discount: 20 },
+     ],
+   },
 
-  // {
-  //   title: "الألعاب",
-  //   products: [
-  //     { id: 17, img: game1, name: "لعبة تركيب", desc: "ذكاء، متعة، تعليم…", oldPrice: 80, price: 55, rate: 4.9, discount: 20 },
-  //     { id: 18, img: game2, name: "سيارة تحكم", desc: "سرعة عالية، متينة…", oldPrice: 150, price: 110, rate: 4.8, discount: 25 },
-  //     { id: 19, img: game3, name: "دمية أطفال", desc: "ناعمة، آمنة، لطيفة…", oldPrice: 60, price: 40, rate: 4.7, discount: 20 },
-  //     { id: 20, img: game4, name: "لعبة ذكاء", desc: "تركيز، تفكير، متعة…", oldPrice: 90, price: 65, rate: 4.9, discount: 20 },
-  //   ],
-  // },
+   {
+     title: "الألعاب",
+     products: [
+       { id: 17, img: game1, name: "لعبة تركيب", desc: "ذكاء، متعة، تعليم…", oldPrice: 80, price: 55, rate: 4.9, discount: 20 },
+     { id: 18, img: game2, name: "سيارة تحكم", desc: "سرعة عالية، متينة…", oldPrice: 150, price: 110, rate: 4.8, discount: 25 },
+       { id: 19, img: game3, name: "دمية أطفال", desc: "ناعمة، آمنة، لطيفة…", oldPrice: 60, price: 40, rate: 4.7, discount: 20 },
+       { id: 20, img: game4, name: "لعبة ذكاء", desc: "تركيز، تفكير، متعة…", oldPrice: 90, price: 65, rate: 4.9, discount: 20 },
+     ],
+   },
 
-  // {
-  //   title: "الصحة",
-  //   products: [
-  //     { id: 21, img: health1, name: "ميزان ذكي", desc: "دقة عالية، ذكي…", oldPrice: 250, price: 180, rate: 4.8, discount: 20 },
-  //     { id: 22, img: health2, name: "جهاز مساج", desc: "راحة فورية، مهدئ…", oldPrice: 300, price: 230, rate: 5.0, discount: 25 },
-  //     { id: 23, img: health3, name: "جهاز بخار", desc: "نضارة بشرة، لطيف…", oldPrice: 200, price: 150, rate: 4.7, discount: 20 },
-  //     { id: 24, img: health4, name: "فرشاة كهربائية", desc: "تنظيف عميق، فعّال…", oldPrice: 180, price: 130, rate: 4.8, discount: 20 },
-  //   ],
-  // },
+   {
+    title: "الصحة",
+     products: [
+       { id: 21, img: health1, name: "ميزان ذكي", desc: "دقة عالية، ذكي…", oldPrice: 250, price: 180, rate: 4.8, discount: 20 },
+       { id: 22, img: health2, name: "جهاز مساج", desc: "راحة فورية، مهدئ…", oldPrice: 300, price: 230, rate: 5.0, discount: 25 },
+       { id: 23, img: health3, name: "جهاز بخار", desc: "نضارة بشرة، لطيف…", oldPrice: 200, price: 150, rate: 4.7, discount: 20 },
+       { id: 24, img: health4, name: "فرشاة كهربائية", desc: "تنظيف عميق، فعّال…", oldPrice: 180, price: 130, rate: 4.8, discount: 20 },
+     ],
+   },
 
-  // {
-  //   title: "السوق",
-  //   products: [
-  //     { id: 25, img: market1, name: "منتج غذائي", desc: "جودة عالية، طازج…", oldPrice: 30, price: 20, rate: 4.6, discount: 15 },
-  //     { id: 26, img: market2, name: "سلعة يومية", desc: "أساسي، اقتصادي، عملي…", oldPrice: 25, price: 18, rate: 4.7, discount: 20 },
-  //     { id: 27, img: market3, name: "منظف منزلي", desc: "قوة تنظيف، سريعة…", oldPrice: 40, price: 28, rate: 4.8, discount: 30 },
-  //     { id: 28, img: market4, name: "مستلزمات", desc: "اقتصادي، عملي، يومي…", oldPrice: 20, price: 14, rate: 4.7, discount: 15 },
-  //   ],
-  // },
+  {
+     title: "السوق",
+     products: [
+       { id: 25, img: market1, name: "منتج غذائي", desc: "جودة عالية، طازج…", oldPrice: 30, price: 20, rate: 4.6, discount: 15 },
+       { id: 26, img: market2, name: "سلعة يومية", desc: "أساسي، اقتصادي، عملي…", oldPrice: 25, price: 18, rate: 4.7, discount: 20 },
+       { id: 27, img: market3, name: "منظف منزلي", desc: "قوة تنظيف، سريعة…", oldPrice: 40, price: 28, rate: 4.8, discount: 30 },
+      { id: 28, img: market4, name: "مستلزمات", desc: "اقتصادي، عملي، يومي…", oldPrice: 20, price: 14, rate: 4.7, discount: 15 },
+    ],
+  },
 ];
 
-export default function OffersTawq() {
+export default function OffersDetails() {
   const navigate = useNavigate();
 
   return (
-    <div className="offers-wrapper2 mb-5 pb-5 " style={{marginTop: "30px"}} >
+    <div className="offers-wrapper2 mb-5 pb-5 pt-5" style={{marginTop: "150px"}} >
       <div className=" container ">
-      <h1 className="first-heading ">عروض طوق نجاة</h1>
+      <h1 className="first-heading pb-4">عروض طوق نجاة</h1>
         <div className="row">
           {/* <h1 className="offers-heading">عروض طوق نجاة</h1> */}
 
@@ -168,9 +168,9 @@ export default function OffersTawq() {
 function ProductCard({ p, navigate }) {
   return (
     <Link
-      to="/offersdetails"
+      to="/offerstawq"
       state={{ product: p }}
-      className="offerscustomer-product-card d-block h-100 d-flex flex-column  "
+      className="offerscustomer-product-card d-block h-100 d-flex flex-column "
       style={{ textDecoration: "none", color: "inherit" }}
     >
       <div className="offerscustomer-discount ">{p.discount}%</div>

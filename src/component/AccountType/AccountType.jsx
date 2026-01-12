@@ -7,7 +7,7 @@ import logo from "../../assets/logo.png";
 import bluecart from "../../assets/bluecart.png";
 import sellerIcon from "../../assets/Vector1.png";
 
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function AccountType() {
   const navigate = useNavigate();
@@ -26,9 +26,9 @@ export default function AccountType() {
 />
           </div>
 
-          <div className="form col-12 col-md-6 d-flex flex-column text-end pt-5 pb-0 mb-0 mt-5 " style={{    paddingLeft:"18px"}}>
+          <div className="form col-12 col-md-6 d-flex flex-column text-end pt-3 pb-0 mb-0 mt-5 " style={{    paddingLeft:"18px"}}>
 
-            <div className=" text-center pt-5">
+            <div className=" text-center ">
               <img src={logo} alt="logo" />
             </div>
 
@@ -69,10 +69,12 @@ export default function AccountType() {
                   alt="seller"
                 />
                 <p className="option-text">بائع</p>
-              </div>
+              </div> <br/>
 
             </div>
-
+     <Link className="text-center d-block commtext mt-4" to="/communitypartnerships" >
+              الشراكات المجتمعية
+              </Link>
           </div>
         </div>
       </div>

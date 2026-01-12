@@ -18,21 +18,19 @@ export default function SellerMarketing() {
  <div className="marketing-sidebar mt-5">
 
   <button className="side-btn">
-    <Link to="/seller/sellerprofileaccount" className="text-dark text-decoration-none">
+    {/* <Link to="/seller/sellerprofileaccount" className="text-dark text-decoration-none">
       <img src={profileimg} alt="Profile" />
       حسابي الشخصي
-    </Link>
+    </Link> */}
   </button>
 
-  <button className="side-btn">
     <Link to="/seller/sellerbankaccount" className="text-dark text-decoration-none">
       <img src={accountimg} alt="Bank Account" />
       الحساب البنكي
     </Link>
-  </button>
 
   <button className="side-btn active">
-    <Link to="/seller/sellermarketing" className="text-white text-decoration-none">
+    <Link to="/seller/sellermarketingreferral" className="text-white text-decoration-none">
       <img src={marketingimg} alt="Marketing" />
       التسويق
     </Link>
@@ -46,7 +44,7 @@ export default function SellerMarketing() {
   </button>
 
   <button className="side-btn logout">
-    <Link to="/seller/sellerlogoutconfirm" className="text-white text-decoration-none">
+    <Link to="/accounttype" className="text-white text-decoration-none">
       <img src={logoutimg} alt="Logout" />
       تسجيل الخروج
     </Link>

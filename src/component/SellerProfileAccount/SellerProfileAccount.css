@@ -160,7 +160,12 @@
 .input-icon { position: absolute; top: 50%; right: 15px; width: 22px; transform: translateY(-50%); }
 
 .save-wrapper {  margin-top: 25px; }
-.save-btn { background: #FF580E; color: #fff; border: none; border-radius: 12px; font-size: 20px; padding: 5px 2px; cursor: pointer; width: 100%; max-width: 150px; }
+.save-btn {
+   background: #FF580E; color: #fff;
+    border: none; border-radius: 12px;
+     font-size: 20px; padding: 5px 2px; cursor: pointer; width: 100%; 
+       max-width: 100%;
+ }
 .phone-field {
   display: flex;
   width: 100%;

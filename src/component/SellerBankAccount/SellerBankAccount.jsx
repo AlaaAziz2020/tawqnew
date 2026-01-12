@@ -38,7 +38,7 @@ export default function SellerBankAccount() {
 
       {/* ===== Content ===== */}
       <div className="bank-content  mb-3">
-        <h1 className="text-center ">الحساب البنكي</h1>
+        <h1 className="text-center pt-4 pb-3">الحساب البنكي</h1>
 
         {/* اسم البنك */}
         <div className="bank-input">

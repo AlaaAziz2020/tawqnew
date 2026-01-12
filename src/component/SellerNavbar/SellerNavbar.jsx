@@ -24,7 +24,7 @@ export default function SellerNavbar() {
     { icon: <CiCreditCard1 />, text: "الحساب البنكي", path: "/seller/sellerbankaccount" },
     // { icon: <MdLanguage />, text: "اللغة", path: "/seller/sellerlanguage" },
     // { icon: <FaHeadset />, text: "دعم التطبيق", path: "/seller/sellersupport" },
-    { icon: <FaBullhorn />, text: "تسويق", path: "/seller/sellermarketing" },
+    { icon: <FaBullhorn />, text: "تسويق", path: "/seller/sellermarketingreferral" },
     // { icon: <FaInfoCircle />, text: "من نحن", path: "/seller/sellerabout" },
     { icon: <FaShieldAlt />, text: "سياسة الخصوصية", path: "/privacy" },
     { icon: <FaFileContract />, text: "الشروط والأحكام", path: "/terms" },
@@ -66,6 +66,18 @@ export default function SellerNavbar() {
   onClick={() => setMenuOpen(false)}
 >
   طلباتي
+</NavLink>
+<NavLink to="/seller/sellercontractpage"
+  className="tn-nav-link"
+  onClick={() => setMenuOpen(false)}
+>
+  معلومات الحساب
+</NavLink>
+<NavLink to="/seller/sellermarketingreferral"
+  className="tn-nav-link"
+  onClick={() => setMenuOpen(false)}
+>
+ التسويق
 </NavLink>
 
           </Nav>

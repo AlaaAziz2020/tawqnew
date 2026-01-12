@@ -1,5 +1,6 @@
 import React from "react";
 import "../LogoutConfirm/LogoutConfirm.css";
+import profilepicture from "../../assets/profileicon.png";
 
 import profileimg from "../../assets/profile-img.png";
 import accountimg from "../../assets/account-img.png";
@@ -20,37 +21,47 @@ export default function LogoutConfirm() {
       {/* ==== SIDEBAR ==== */}
     
            <div className="logoutmarketing-sidebar ">
-             <button className="side-btn " style={{alignItem:"center"}}>
+             {/* <button className="side-btn " style={{alignItem:"center"}}>
                 <img src={profileimg} alt="" />
                حسابي الشخصي
-             </button>
+             </button> */}
+                      <Link to="/profileaccount" className="side-btn white mt-5 ">
+                        <img src={profileimg} alt="" />
+                        <span className="logout-text px-2">حسابي الشخصي</span>
+                      </Link>
     
-             <button className="side-btn">
+             {/* <button className="side-btn">
                <img src={accountimg} alt="" />
                <Link to='/bankaccount' className="text-dark text-decoration-none"> الحساب البنكي</Link>
-             </button>
+             </button> */}
     
-    <Link to='/marketing' className="text-dark text-decoration-none">
-      <button className="side-btn">
-        <img src={marketingimg} alt="" />
-        التسويق
-      </button>
-    </Link>
-    
-             <button className="side-btn">
+  <Link to="/marketing" className="side-btn white">
+    <img src={marketingimg} alt="" />
+    <span className="px-2">التسويق</span>
+  </Link>
+             {/* <button className="side-btn">
                            <img src={survimg} alt="" /> 
     
                 <Link to='/contractpage' className="text-dark text-decoration-none"> 
                التقييم والعقود
                 </Link>
              </button>
-    
+     */}
+        <Link to="/myaddvertisements" className="side-btn white">
+                   <img src={myadvertisements} alt="" />
+                   <span className="px-2">إعلاناتي</span>
+                 </Link>
+        <Link to="/addadvertisement" className="side-btn white">
+              <img src={addadvertisements} alt="" />
+              <span className="px-2">إضافة إعلان</span>
+            </Link>
              <button className="side-btn logout">
                <img src={logoutimg} alt="" /> 
-                 <Link to='/logoutconfirm' className="text-white text-decoration-none"> 
+                 <Link to='/accounttype' className="text-white text-decoration-none"> 
               تسجيل الخروج
                 </Link>
              </button>
+
            </div>
 
       {/* ==== LOGOUT CONTENT ==== */}

@@ -136,9 +136,12 @@ import SellerBurgerOffer from './component/SellerBurgerOffer/SellerBurgerOffer';
 import SellerMobileOffer from './component/SellerMobileOffer/SellerMobileOffer';
 import SellerMyStore from './component/SellerMyStore/SellerMyStore';
 import Offers from './component/Offers/Offers';
+import OffersSugg from './component/OffersSugg/OffersSugg'
 import WinterDetails from './component/WinterDetails/WinterDetails';
 import Slider from './component/Slider/Slider';
 import SellerUppernav from './component/SellerUppernav/SellerUppernav';
+import OffersDetails from './component/OffersDetails/OffersDetails';
+import Myaddvertisements from './component/Myaddvertisements/Myaddvertisements';
 
 const router = createHashRouter([
   {
@@ -230,7 +233,12 @@ const router = createHashRouter([
 { path:'sellersdetails/:id', element:<SellersDetails/> },
 {path:'scrolltop',element:<ScrollTop/>},
 {path:'alloffers',element:<AllOffers/>},
+{path:'offerssugg',element:<OffersSugg/>},
+{path:'offersdetails',element:<OffersDetails/>},
+{path:'myaddvertisements',element:<Myaddvertisements/>},
+
 {path:'winterdetails',element:<WinterDetails/>},
+
 {path:'/products/:category',element:<AllProductsByCategory/>},
 {path:'privacy',element:<Privacy/>}
 

@@ -158,7 +158,11 @@ margin-left:2%
   display: flex;
   gap: 2%;
 }
-
+.commtext{
+      color: #1d3a77;
+    font-size: 18px;
+    font-weight: 600;
+}
 /* موبايل */
 @media (max-width: 768px) {
   .account {

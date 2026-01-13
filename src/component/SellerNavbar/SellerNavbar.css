@@ -286,6 +286,7 @@ font-size: 14px;
   .tn-nav-sidebar {
         width: 213px;
   }
+
   /* .tn-nav-main {
     top: 29% !important;
     height: 10%;
@@ -301,6 +302,13 @@ font-size: 14px;
     bottom: 1%;
     right: 50%;
   }
+  .tn-nav-sidebar.open {
+    left: 42%;
+    right: 0;
+    top: 21%;
+}
+
+
 }
 /* @media (min-width: 400px) and (max-width: 767px){
       .customerbtn {

@@ -172,6 +172,10 @@
         top: 19%;
         border-radius: 0;
     }
+    .tn-nav-sidebar.open{
+              top: 14%;
+
+    }
 }
 
 /* @media (max-width: 360px) {

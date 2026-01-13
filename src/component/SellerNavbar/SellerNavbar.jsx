@@ -23,8 +23,8 @@ const sidebarLinks = [
   { icon: <FiUser />, text: "معلومات الحساب", path: "/seller/sellerprofileaccount" },
   { icon: <FaBullhorn />, text: "تسويق", path: "/seller/sellermarketingreferral" },
   { icon: <FaBullhorn />, text: "الدعم", path: "/seller/selleresupport" },
-  { icon: <FaShieldAlt />, text: "سياسة الخصوصية", path: "/seller/sellerprivacy" },
-  { icon: <FaFileContract />, text: "الشروط والأحكام", path: "/seller/sellerterms" },
+  // { icon: <FaShieldAlt />, text: "سياسة الخصوصية", path: "/seller/sellerprivacy" },
+  //  { icon: <FaFileContract />, text: "الشروط والأحكام", path: "/seller/sellerterms" },
 ];
 
   return (
@@ -81,7 +81,7 @@ const sidebarLinks = [
           <span className="date">تاريخ الانضمام 25/10/2025</span> */}
         </div>
 
-        <ul className="tn-nav-sidebar-links">
+        {/* <ul className="tn-nav-sidebar-links">
           {sidebarLinks.map((item, index) => (
             <li
               key={index}
@@ -97,7 +97,24 @@ const sidebarLinks = [
               <IoIosArrowBack />
             </li>
           ))}
-        </ul>
+        </ul> */}
+<ul className="tn-nav-sidebar-links scroll-area pt-1">
+  {sidebarLinks.map((item, index) => (
+    <li
+      key={index}
+      onClick={() => {
+        setSidebarOpen(false);
+        navigate(item.path);
+      }}
+    >
+      <span className="tn-nav-sidebar-item">
+        {item.icon}
+        {item.text}
+      </span>
+      <IoIosArrowBack />
+    </li>
+  ))}
+</ul>
 
         {/* <button className="sellertn-nav-logout-btn">
           تسجيل الخروج من التطبيق <MdLogout />

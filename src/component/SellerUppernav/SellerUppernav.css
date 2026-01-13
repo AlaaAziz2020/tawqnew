@@ -66,6 +66,59 @@
   color: #0c317a;
   cursor: pointer;
 }
+/* ===== Logout Modal ===== */
+.logout-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logout-modal {
+  background: #fff;
+  padding: 30px 20px;
+  width: 90%;
+  max-width: 350px;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.logout-modal h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.logout-confirm {
+  width: 100%;
+  background: #d22121;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.logout-cancel {
+  width: 100%;
+  background: #f1f1f1;
+  color: #333;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.logout-icon {
+  cursor: pointer;
+}
+
 /*padding-top: 9px;*/
 @media (max-width: 576px) {
   .sellertn-uppernav {
@@ -102,7 +155,7 @@ height: 66px;
       font-size: 9px;
 }
   svg {
-    width: 28px;
+        width: 19px;
     height: 28px;
   }
 }

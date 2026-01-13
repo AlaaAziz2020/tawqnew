@@ -132,7 +132,7 @@
 .tn-nav-sidebar {
   position: fixed;
   top: 0;
-  right: -320px;       /* ⬅️ مخفي بره من اليمين */
+  right: -320px;
   width: 300px;
   height: 100vh;
   background: #fff;
@@ -140,21 +140,24 @@
   padding: 20px;
   transition: right 0.3s ease;
   direction: rtl;
+
+  overflow-y: auto;
 }
 
 .tn-nav-sidebar.open {
-  right: 0;            /* ⬅️ يطلع من اليمين */
+  right: 0;            
 }
-
 
 .tn-nav-sidebar.open {
-  left: 0;
+  left: 34%;
+  top: 22%;
 }
+
 
 .tn-nav-close-sidebar {
   position: absolute;
-  top: 16px;
-  left: 16px;   /* في RTL يبقى على الشمال */
+    top: -1px;
+  left: 16px;   
   background: none;
   border: none;
   font-size: 26px;
@@ -174,9 +177,10 @@
 }
 
 .tn-nav-sidebar-links {
-  list-style: none;
-  padding: 0;
-    margin-top: 37px;
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+
 }
 
 .tn-nav-sidebar-links li {
@@ -197,7 +201,7 @@ font-size: 14px;
 
 .tn-nav-sidebar-links svg {
   color: #1d3a77;
-  width: 23px;
+    width: 20px;
 }
 
 .sellertn-nav-logout-btn {
@@ -210,6 +214,10 @@ font-size: 14px;
   margin-top: 25px;
   font-size: 11px;
   cursor: pointer;
+}
+.scroll-area {
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
 }
 
 /* ================= MOBILE ================= */

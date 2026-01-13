@@ -146,6 +146,7 @@ import SellerPrivacy from './component/SellerPrivacy/SellerPrivacy';
 import SellereSupport from './component/SellereSupport/SellereSupport';
 import SellerFinancialSupport from './component/SellerFinancialSupport/SellerFinancialSupport';
 import SellerTerms from './component/SellerTerms/SellerTerms';
+import SellerFooter from './component/SellerFooter/SellerFooter';
 
 const router = createHashRouter([
   {
@@ -307,6 +308,9 @@ const router = createHashRouter([
       {path:'/seller/sellerfinancialsupport',element:<SellerFinancialSupport/>},
       {path:'/seller/sellerprivacy',element:<SellerPrivacy/>},
       {path:'/seller/sellerterms',element:<SellerTerms/>},
+      // {path:'/seller/sellerabout',element:<SellerAbout/>},
+      {path:'/seller/sellerfooter',element:<SellerFooter/>},
+
 
    {
        path: "sellerrelatedproductsdetails/:id",

@@ -1,7 +1,7 @@
 import { Outlet, useLocation } from "react-router-dom";
 import SellerNavbar from "../SellerNavbar/SellerNavbar";
 import SellerUppernav from "../SellerUppernav/SellerUppernav";
-import Footer from "../Footer/Footer";
+import SellerFooter from "../SellerFooter/SellerFooter";
 import ScrollTop from "../ScrollTop/ScrollTop"
 
 export default function SellerLayout() {
@@ -29,7 +29,7 @@ export default function SellerLayout() {
 
       <Outlet />
 
-      {!hideLayout && <Footer />}
+      {!hideLayout && <SellerFooter />}
     </>
   );
 }

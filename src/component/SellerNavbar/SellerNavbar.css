@@ -11,7 +11,7 @@
     padding: 12px 20px;
     width: 100%;
     position: fixed;
-    top: 74px;
+    top: 68px;
     left: 0;
     z-index: 9999;
     height: 68px;
@@ -173,6 +173,7 @@
   .tn-nav-sidebar {
     width: 90vw;
   }
+  
   /* .tn-nav-sidebar.open {
     left: 34%;
     right: -1px;
@@ -183,6 +184,11 @@
         left: 20%;
         max-width: 258px;
     } */
+         .tn-nav-sidebar.open {
+        top: 129px;
+        left: 67%;
+        max-width: 258px;
+    }
 }
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
@@ -207,17 +213,40 @@
  } */
     .tn-nav-sidebar.open {
         top: 129px;
-        left: 67%;
+        left: 19%;
         max-width: 258px;
     }
 
 }
 
-
-@media (max-width:1024px){
+/* @media (max-width:1024px){
       .tn-nav-sidebar.open {
         top: 129px;
         left: 75%;
         max-width: 258px;
     }
 }
+
+@media (max-width: 1044px) {
+    .tn-nav-sidebar.open {
+        top: 129px;
+        left: 78%;
+        max-width: 258px;
+    }
+}
+
+@media (max-width: 2025px) {
+    .tn-nav-sidebar.open {
+        top: 129px;
+        left: 85%;
+        max-width: 258px;
+    }
+}
+
+@media (min-width: 2026px) {
+    .tn-nav-sidebar.open {
+        top: 129px;
+        left: 90%;
+        max-width: 258px;
+    }
+} */

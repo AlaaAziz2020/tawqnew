@@ -12,7 +12,7 @@ export default function Uppernav() {
     // localStorage.removeItem("token");
 
     setShowLogout(false);
-    navigate("/login"); // أو accounttype حسب مشروعك
+    navigate("/seller/sellerlogin"); // أو accounttype حسب مشروعك
   };
 
   return (

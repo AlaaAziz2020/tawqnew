@@ -49,16 +49,21 @@ export default function SellerFooter() {
           <div className="col-6 col-md-3 footer-col">
             <h3>خدماتنا</h3>
             <ul className="service-list">
-                             <Link to="/seller/sellerhome" className="text-decoration-none">
+                             <Link to="" className="text-decoration-none">
                <li className="text-white ">تاجر </li>
               </Link>
               {/* <li>تاجر</li> */}
-                                 <Link to="/login" className="text-decoration-none">
+                                 <Link to="" className="text-decoration-none">
                <li className="text-white "> مستخدم</li>
               </Link>
               {/* <li>مستخدم</li> */}
+               <Link to="" className="text-decoration-none">
               <li>مسوق</li>
+              </Link>
+            <Link to="" className="text-decoration-none">
+
               <li>مساعدتك في الشراء والبيع</li>
+              </Link>
             </ul>
           </div>
 

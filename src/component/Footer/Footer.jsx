@@ -49,11 +49,11 @@ export default function Footer() {
           <div className="col-6 col-md-3 footer-col">
             <h3>خدماتنا</h3>
             <ul className="service-list">
-                             <Link to="/seller/sellerlogin" className="text-decoration-none">
+                             <Link to="" className="text-decoration-none">
                <li className="text-white ">تاجر </li>
               </Link>
               {/* <li>تاجر</li> */}
-                                 <Link to="/" className="text-decoration-none">
+                                 <Link to="" className="text-decoration-none">
                <li className="text-white "> مستخدم</li>
               </Link>
               {/* <li>مستخدم</li> */}

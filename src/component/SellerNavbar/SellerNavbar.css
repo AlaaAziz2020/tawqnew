@@ -11,7 +11,7 @@
   padding: 12px 20px;
   width: 100%;
   position: fixed;
-  top: 68px;
+    top: 80px;
   left: 0;
   z-index: 9999;
   height: 68px;
@@ -173,9 +173,13 @@
         border-radius: 0;
     }
     .tn-nav-sidebar.open{
-              top: 20%;
+        top: 22%;
               background-color: yellow;
 
+    }
+    .tn-nav-main {
+  
+    top: 67px;
     }
 }
 
